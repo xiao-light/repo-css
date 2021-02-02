@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #5d3f51;
+}
+.bigbox{
+	width: 600px;
+	height: 200px;
+	margin: 200px auto;
+}
+.box{
+	float: left;
+	position: relative;
+	height: 40px;
+	width: 100px;
+	background-color: #666;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 30px;
+}
+.box:hover{
+	text-shadow: 0 0 10px #2097ef;
+	color: #2097EF;
+}
+.top,
+.right,
+.botton,
+.left{
+	position: absolute;
+	background-color: #2097EF;
+	box-shadow: 0 0 10px #2097EF;
+	transition: all .1s linear;
+}
+.top{
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: #2097EF;
+	transition-delay: .3s;
+}
+.box:hover .top{
+	width: 100px;
+	transition-delay: 0s;
+}
+.right{
+	top: 0;
+	right: 0;
+	width: 3px;
+	height: 0;
+	background-color: #2097EF;
+	transition-delay: .2s;
+}
+.box:hover .right{
+	height: 40px;
+	transition-delay: .1s;
+}
+.botton{
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 3px;
+	background-color: #2097EF;
+	transition-delay: .1s;
+}
+.box:hover .botton{
+	width: 100px;
+	transition-delay: .2s;
+}
+.left{
+	bottom: 0;
+	left: 0;
+	width: 3px;
+	height: 0;
+	background-color: #2097EF;
+	transition-delay: 0s;
+}
+.box:hover .left{
+	height: 40px;
+	transition-delay: .3s;
+}

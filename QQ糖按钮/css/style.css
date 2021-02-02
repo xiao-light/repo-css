@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,
+body{
+	height: 100%;
+	width: 100%;
+}
+.btn{
+	position: fixed;
+	height: 40px;
+	width: 100px;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -20px;
+	background-color: orange;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-weight: 700;
+	box-shadow: 0px 5px 7px rgba(200,200,200,.8);
+	border-radius: 5px;
+}
+.btn:hover{
+	cursor: pointer;
+	animation: cute .5s;
+}
+@keyframes cute{
+	0%{}
+	25% {transform: scale(1,1);}
+	50% {transform: scale(0.9,1.1);}
+	75% {transform: scale(1.1,.9);}
+	100%{transform: scale(1,1);}
+}
